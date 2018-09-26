@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,82 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Restructure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQx-ra-cAt">
+                                <rect key="frame" x="16" y="20" width="382" height="602"/>
+                                <color key="backgroundColor" red="0.54938402367807515" green="0.7857836787564767" blue="0.36227207249835702" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOQ-6G-sp7">
+                                <rect key="frame" x="16" y="553" width="172" height="38"/>
+                                <color key="backgroundColor" red="0.90667503238341973" green="0.2814711002575439" blue="0.33019403161158317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="TLX-Il-pNz"/>
+                                </constraints>
+                                <state key="normal" title="Action One">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYd-kQ-jJu">
+                                <rect key="frame" x="187" y="553" width="172" height="38"/>
+                                <color key="backgroundColor" red="0.85125890544041449" green="0.50569778436587076" blue="0.23406058048358472" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="HJm-VW-j7e"/>
+                                </constraints>
+                                <state key="normal" title="Action Three">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VmW-4g-RlD">
+                                <rect key="frame" x="16" y="591" width="172" height="38"/>
+                                <color key="backgroundColor" red="0.40242573456578745" green="0.45352980998975001" blue="0.85125890544041449" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="DAK-i4-WbP"/>
+                                </constraints>
+                                <state key="normal" title="Action Two">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lz-RJ-uh1">
+                                <rect key="frame" x="187" y="591" width="172" height="38"/>
+                                <color key="backgroundColor" red="0.85125890544041449" green="0.80630069902197898" blue="0.014241574416632553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="et5-Im-sEr"/>
+                                </constraints>
+                                <state key="normal" title="Action Four">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VmW-4g-RlD" firstAttribute="width" secondItem="UOQ-6G-sp7" secondAttribute="width" id="1gK-E9-Z8D"/>
+                            <constraint firstItem="bYd-kQ-jJu" firstAttribute="leading" secondItem="UOQ-6G-sp7" secondAttribute="trailing" constant="167" id="LCr-3b-siu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VmW-4g-RlD" secondAttribute="bottom" constant="38" id="MjJ-Um-1hX"/>
+                            <constraint firstItem="UOQ-6G-sp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Qgq-MA-Ih5"/>
+                            <constraint firstItem="eQx-ra-cAt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RFN-ag-8R3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6lz-RJ-uh1" secondAttribute="trailing" constant="16" id="VhN-xm-2sJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6lz-RJ-uh1" secondAttribute="bottom" constant="38" id="WcR-03-jRj"/>
+                            <constraint firstItem="VmW-4g-RlD" firstAttribute="top" secondItem="UOQ-6G-sp7" secondAttribute="bottom" id="YJv-f4-3mC"/>
+                            <constraint firstItem="6lz-RJ-uh1" firstAttribute="width" secondItem="UOQ-6G-sp7" secondAttribute="width" id="aZt-ZG-VpA"/>
+                            <constraint firstItem="UOQ-6G-sp7" firstAttribute="top" secondItem="eQx-ra-cAt" secondAttribute="bottom" id="bfB-qZ-6At"/>
+                            <constraint firstItem="bYd-kQ-jJu" firstAttribute="width" secondItem="UOQ-6G-sp7" secondAttribute="width" id="dta-sO-Y8t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bYd-kQ-jJu" secondAttribute="trailing" constant="16" id="eMG-CU-9Y4"/>
+                            <constraint firstItem="6lz-RJ-uh1" firstAttribute="leading" secondItem="VmW-4g-RlD" secondAttribute="trailing" constant="167" id="jVU-Fx-Pmk"/>
+                            <constraint firstItem="VmW-4g-RlD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="juH-vU-hNb"/>
+                            <constraint firstItem="6lz-RJ-uh1" firstAttribute="top" secondItem="bYd-kQ-jJu" secondAttribute="bottom" id="lH4-M3-OvQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQx-ra-cAt" secondAttribute="trailing" constant="16" id="uAu-DK-LFX"/>
+                            <constraint firstItem="eQx-ra-cAt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xbm-DP-ta4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-100" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>
